@@ -1,0 +1,106 @@
+.home-container {
+  padding: 30px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  background: #e5e7eb;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabs button.active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Posts Grid */
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Card */
+.post-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+}
+
+.post-card h3 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.post-card p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* Delete Button */
+.delete-btn {
+  margin-top: 15px;
+  padding: 8px 14px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* Message */
+.home-message {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Tutor name styling */
+.tutor-name {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+/* Student / Parent heading */
+.student-info {
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+.student-info h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.student-info p {
+  font-size: 15px;
+  color: #64748b;
+}
