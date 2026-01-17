@@ -35,9 +35,3 @@ export const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
 
-// /**
-//  * Logout user
-//  */
-// export const logoutUser = () => {
-//   localStorage.removeItem("user");
-// };
