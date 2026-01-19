@@ -1,4 +1,3 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fa1309d5-75c7-4182-8cfe-09d3f39ca109" /># Tutoroit – Tutor Finder Platform 🎓
 
 A full-stack web application that connects tutors with students and parents.
 
@@ -47,8 +46,6 @@ Frontend (React) → Backend (Spring Boot REST API) → Database
 ---
 
 ## 📸 Screenshots
-![photo_2026-01-19_11-16-34](https://github.com/user-attachments/assets/3c0ce6a1-9ddc-46ff-89eb-7bd80ed61bad)
-
 
 
 ## ⚙️ Local Setup
