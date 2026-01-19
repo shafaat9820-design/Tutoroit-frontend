@@ -1,10 +1,13 @@
 import api from "./api";
 
 export const createPost = async (postData, tutorEmail) => {
-  const response = await api.post(
-    `/api/posts/create?tutorEmail=${tutorEmail}`,
-    postData
-  );
+
+  const response = await api.post("/api/posts", postData);
+
+  // const response = await api.post(
+  //   `/api/posts/create?tutorEmail=${tutorEmail}`,
+  //   postData
+  // );
   return response.data;
 };
 
