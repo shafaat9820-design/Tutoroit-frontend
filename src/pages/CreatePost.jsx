@@ -34,7 +34,44 @@ const CreatePost = () => {
     });
   };
 
-  const handleSubmit = async (e) => {
+//   const handleSubmit = async (e) => {
+//   e.preventDefault();
+//   setError("");
+
+//   if (
+//     !form.qualification ||
+//     !form.experience ||
+//     !form.classToTeach ||
+//     !form.subjects ||
+//     !form.fees
+//   ) {
+//     setError("Please fill all fields");
+//     return;
+//   }
+
+//   try {
+//     await createPost(
+//       {
+//         qualification: form.qualification,
+//         experience: form.experience,
+//         classToTeach: form.classToTeach,
+//         subjects: form.subjects,
+//         fees: Number(form.fees),
+//       },
+//       user.email
+//     );
+
+//     // ✅ SUCCESS MESSAGE
+//     alert("Post created successfully");
+
+//     // ✅ AUTO REDIRECT TO HOME
+//     navigate("/");
+//   } catch (err) {
+//     setError("Failed to create post");
+//   }
+// };
+
+const handleSubmit = async (e) => {
   e.preventDefault();
   setError("");
 
@@ -50,27 +87,21 @@ const CreatePost = () => {
   }
 
   try {
-    await createPost(
-      {
-        qualification: form.qualification,
-        experience: form.experience,
-        classToTeach: form.classToTeach,
-        subjects: form.subjects,
-        fees: Number(form.fees),
-      },
-      user.email
-    );
+    await createPost({
+      qualification: form.qualification,
+      experience: form.experience,
+      classToTeach: form.classToTeach,
+      subjects: form.subjects,
+      fees: Number(form.fees),
+      tutorEmail: user.email, // ✅ SEND INSIDE BODY
+    });
 
-    // ✅ SUCCESS MESSAGE
     alert("Post created successfully");
-
-    // ✅ AUTO REDIRECT TO HOME
     navigate("/");
   } catch (err) {
     setError("Failed to create post");
   }
 };
-
 
   return (
     <div className="container">
